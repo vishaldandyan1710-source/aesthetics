@@ -1,0 +1,171 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Maison Royale — Makeover Studio</title>
+
+  <meta name="description" content="Maison Royale — An exquisite makeover studio where beauty meets dignity, elegance and artistry.">
+  <meta name="theme-color" content="#f6efe6">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=DM+Sans:wght@300;400;500;600&family=Italianno&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- PAGE LOADER -->
+  <div class="page-loader" id="pageLoader">
+    <div class="loader-monogram">MR</div>
+    <div class="loader-line"></div>
+    <p>MAISON ROYALE</p>
+  </div>
+
+  <!-- NAVIGATION -->
+  <header class="site-header" id="siteHeader">
+
+    <a href="#home" class="brand">
+      <span class="brand-symbol">MR</span>
+      <span class="brand-text">
+        <strong>MAISON ROYALE</strong>
+        <small>MAKEOVER STUDIO</small>
+      </span>
+    </a>
+
+    <nav class="desktop-nav" aria-label="Main navigation">
+      <a href="#home" data-page-link="home">Home</a>
+      <a href="#gallery" data-page-link="gallery">Gallery</a>
+      <a href="#services" data-page-link="services">Services</a>
+      <a href="#enquiry" data-page-link="enquiry">Enquiry</a>
+      <a href="#contact" data-page-link="contact">Contact</a>
+    </nav>
+
+    <a href="#enquiry" class="nav-appointment">
+      Book A Visit
+      <span>↗</span>
+    </a>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false">
+      <span></span>
+      <span></span>
+    </button>
+
+  </header>
+
+  <!-- MOBILE NAVIGATION -->
+  <div class="mobile-menu" id="mobileMenu">
+
+    <div class="mobile-menu-top">
+      <span>EXPLORE</span>
+      <button id="mobileClose" aria-label="Close menu">✕</button>
+    </div>
+
+    <nav class="mobile-nav">
+      <a href="#home" data-page-link="home">
+        <span>01</span> Home
+      </a>
+
+      <a href="#gallery" data-page-link="gallery">
+        <span>02</span> Gallery
+      </a>
+
+      <a href="#services" data-page-link="services">
+        <span>03</span> Services
+      </a>
+
+      <a href="#enquiry" data-page-link="enquiry">
+        <span>04</span> Enquiry
+      </a>
+
+      <a href="#contact" data-page-link="contact">
+        <span>05</span> Contact
+      </a>
+    </nav>
+
+    <div class="mobile-menu-bottom">
+      <p>Beauty. With grace.</p>
+      <span>EST. 2026</span>
+    </div>
+
+  </div>
+
+  <!-- PAGE CONTENT -->
+  <main id="app" aria-live="polite"></main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+
+    <div class="footer-main">
+
+      <div class="footer-brand">
+        <span class="brand-symbol footer-symbol">MR</span>
+
+        <h2>Maison<br>Royale.</h2>
+
+        <p>
+          A beauty experience shaped by artistry,
+          elegance and timeless grace.
+        </p>
+      </div>
+
+      <div class="footer-column">
+        <h4>Explore</h4>
+        <a href="#home">Home</a>
+        <a href="#gallery">Our Gallery</a>
+        <a href="#services">Services</a>
+        <a href="#enquiry">Enquiry</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div class="footer-column">
+        <h4>Visit Us</h4>
+        <p>123 Luxury Avenue</p>
+        <p>Chandigarh, India</p>
+        <p>By Appointment</p>
+      </div>
+
+      <div class="footer-column">
+        <h4>Connect</h4>
+        <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer">Instagram ↗</a>
+        <a href="#enquiry">Book a Visit ↗</a>
+        <a href="mailto:hello@example.com">Email ↗</a>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <span>© <span id="footerYear">2026</span> Maison Royale</span>
+      <span>Beauty • Dignity • Artistry</span>
+    </div>
+
+  </footer>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+
+    <button class="lightbox-close" id="lightboxClose" aria-label="Close image viewer">✕</button>
+
+    <button class="lightbox-prev" id="lightboxPrev" aria-label="Previous image">←</button>
+
+    <div class="lightbox-content">
+      <img id="lightboxImage" src="" alt="Gallery image">
+      <p id="lightboxCaption"></p>
+    </div>
+
+    <button class="lightbox-next" id="lightboxNext" aria-label="Next image">→</button>
+
+  </div>
+
+  <!-- TOAST -->
+  <div class="toast" id="toast" role="status"></div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
